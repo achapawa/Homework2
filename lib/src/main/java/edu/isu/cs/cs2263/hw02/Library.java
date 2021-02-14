@@ -7,4 +7,17 @@ public class Library {
     public boolean someLibraryMethod() {
         return true;
     }
+    public static void main(String[] args) {
+
+        PushbackTokenizer token1=new TokenAdapter("This is Object Oriented Programming");
+        System.out.println(token1.nextToken());
+        System.out.println(token1.nextToken());
+        token1.pushback();
+        System.out.println(token1.nextToken());
+        System.out.println(token1.nextToken());
+        token1.pushback();
+        System.out.println(token1.nextToken());
+        System.out.println(token1.nextToken());
+
+    }
 }
